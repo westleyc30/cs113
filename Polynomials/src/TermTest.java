@@ -1,8 +1,22 @@
+/**
+ * TermTest.java : JUnit test for Term class.  Tests are organized in the strategic
+ * development process for the class only, running the entire JUnit Tester does not
+ * guarantee order!
+ *
+ * DO NOT CHANGE ANY CODE HERE! THIS WILL BE USED FOR GRADING! Definitely use this
+ * as a guide to help you program Term and account for all situations. You can
+ * comment code out (otherwise your code may not compile as you build the class!)
+ *
+ * @author  Nery Chapeton-Lamas <nchapetonLamas@miracosta.edu>
+ * @version 1.0
+ */
+
+
 import org.junit.Test;
+import static org.junit.Assert.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+public class TermTest {
 
-class TermTest {
     //if TERMS array changed, make sure to update COEFFICIENTS and/or EXPONENTS array
     private static final String[] TERMS = {"", "+5", "-3", "+x", "-x",
             "+6x", "-9x", "+x^3", "-x^5", "+x^-2",
@@ -199,4 +213,5 @@ class TermTest {
 
         }
     }
+
 }
