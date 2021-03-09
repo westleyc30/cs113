@@ -3,12 +3,14 @@ import java.util.LinkedList;
 
 public class Polynomial {
     private LinkedList<Term> termList = new LinkedList<>();
+
     public Polynomial() {
 
     }
 
     /**
      * Copy constructor
+     * 
      * @param original Polynomial
      */
     public Polynomial(Polynomial original) {
@@ -16,8 +18,8 @@ public class Polynomial {
             System.out.println("VALIDATION ERROR: copy constructor");
             System.exit(0);
         }
-//        this.termList = new LinkedList<Term>(original.getList());
-        for(int i = 0; i < original.getNumTerms(); i++) {
+        // this.termList = new LinkedList<Term>(original.getList());
+        for (int i = 0; i < original.getNumTerms(); i++) {
             Term originalTerm = original.getTerm(i);
             Term newTerm = new Term(originalTerm.getCoefficient(), originalTerm.getExponent());
             termList.add(newTerm);
@@ -30,18 +32,16 @@ public class Polynomial {
 
     /**
      * counts number of terms in termList
+     * 
      * @return number of terms in TermList
      */
-    public int getNumTerms(){
-        int numTerms = 0;
-        for (int i = 0; i < termList.size(); i++) {
-            numTerms++;
-        }
-        return numTerms;
+    public int getNumTerms() {
+        return termList.size();
     }
 
     /**
      * Adds Term to termList
+     * 
      * @param t Term
      */
     public void addTerm(Term t) {
@@ -67,9 +67,15 @@ public class Polynomial {
         if (!termAdded) {
             termList.add(t);
         }
-//        for (int i = 0; i < this.getNumTerms();)
+        // for (int i = 0; i < this.getNumTerms();)
     }
-    // TODO create getTerm
+
+    /**
+     * Gets term at i
+     * 
+     * @param i
+     * @return Term
+     */
     public Term getTerm(int i) {
         //
         return termList.get(i);
@@ -84,7 +90,10 @@ public class Polynomial {
         termList.clear();
     }
 
-    // TODO create add()
+    /**
+     * 
+     * @param p Polynomial
+     */
     public void add(Polynomial p) {
         for (int i = 0; i < p.getNumTerms(); i++) {
             this.addTerm(p.getTerm(i));
@@ -97,19 +106,21 @@ public class Polynomial {
         String negative = " - ";
         String output = "0";
         for (int i = 0; i < this.getNumTerms(); i++) {
-            if ( i == 0 && this.getTerm(i).getCoefficient() > 0) {
+            if (i == 0 && this.getTerm(i).getCoefficient() > 0) {
                 output = (this.getTerm(i).toString().substring(1));
             } else if (i == 0 && this.getTerm(i).getCoefficient() < 0) {
                 output = "- " + this.getTerm(i).toString().substring(1);
-            } else if (this.getTerm(i).getCoefficient() > 0) {
-                output += positive + this.getTerm(i).toString().substring(1);
-            } else if (this.getTerm(i).getCoefficient() < 0) {
-                output += negative + this.getTerm(i).toString().substring(1);
+            } else {
+                output += this.getTerm(i).toString();
             }
+            // else if (this.getTerm(i).getCoefficient() > 0) {
+            // output += positive + this.getTerm(i).toString().substring(1);
+            // } else if (this.getTerm(i).getCoefficient() < 0) {
+            // output += negative + this.getTerm(i).toString().substring(1);
+            // }
         }
         return output;
     }
-
 
     // OTHER METHODS
     public boolean checkForEqualExponent(Term term1, Term term2) {
@@ -119,6 +130,5 @@ public class Polynomial {
     public void combineTerms(Term term1, Term term2) {
         term1.setCoefficient(term1.getCoefficient() + term2.getCoefficient());
     }
-
 
 }

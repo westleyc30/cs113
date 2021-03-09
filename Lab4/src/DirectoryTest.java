@@ -24,7 +24,6 @@ class DirectoryTest {
             assertEquals(names[i], dir.getEntry(i).getName());
         }
         // Change entry test
-
         dir.addOrChangeEntry(names[0], changedNumber);
         assertEquals(changedNumber, dir.getEntry(0).getNumber());
     }
@@ -37,6 +36,7 @@ class DirectoryTest {
         for (int i = 0; i < names.length; i++) {
             dir.addOrChangeEntry(names[i], numbers[i]);
         }
+        // remove first directory entry and test
         DirectoryEntry removedEntry = dir.removeEntry(names[0]);
         assertEquals(names[0], removedEntry.getName() );
         assertEquals(numbers[0], removedEntry.getNumber());
