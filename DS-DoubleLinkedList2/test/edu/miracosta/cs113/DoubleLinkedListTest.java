@@ -588,8 +588,10 @@ public class DoubleLinkedListTest {
         charIterator = charList.listIterator(CHAR_SET_INDEX); // index 3
         assertTrue("Test failed - Iterator at end of the list; hasPrevious must return true.", charIterator.hasPrevious());
 
+
         // Test new iterator on an empty list
         doubleList.clear();
+        System.out.println("PASSED");
         assertFalse("Test failed - Iterator on an empty list; hasPrevious must return false.", doubleList.listIterator().hasPrevious());
     }
 
