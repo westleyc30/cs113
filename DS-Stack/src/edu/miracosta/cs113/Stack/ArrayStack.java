@@ -8,7 +8,7 @@ public class ArrayStack<E> implements StackInt<E> {
 
     // Data Fields
     /** Storage for stack. */
-    E[] theData;
+    E[] theData;     
     /** Index to top of stack. */
     int topOfStack = -1; // Initially empty stack.
     private static final int INITIAL_CAPACITY = 10;
