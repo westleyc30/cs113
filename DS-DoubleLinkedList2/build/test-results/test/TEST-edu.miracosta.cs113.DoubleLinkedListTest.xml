@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.miracosta.cs113.DoubleLinkedListTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2021-04-13T18:01:40" hostname="Westleys-MacBook-Pro.local" time="0.027">
+<testsuite name="edu.miracosta.cs113.DoubleLinkedListTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2021-04-13T18:13:21" hostname="Westleys-MacBook-Pro.local" time="0.033">
   <properties/>
   <testcase name="testAddingOneBySize" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.002"/>
   <testcase name="testAddingThreeByToString" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testGetError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testNewLinkedListByToString" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testGet" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testGet" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testSet" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testIteratorRemove" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.004"/>
+  <testcase name="testIteratorRemove" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.006"/>
   <testcase name="testInsertingByToString" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testClear" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testLastIndexOf" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
-  <testcase name="testIteratorNextIndex" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testLastIndexOf" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testIteratorNextIndex" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testRemoveByIndex" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testRemoveByValue" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
-  <testcase name="testIteratorRemoveError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testRemoveByValue" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.002"/>
+  <testcase name="testIteratorRemoveError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testIndexOfRepeats" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testIteratorHasNext" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
-  <testcase name="testAddingThreeBySize" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testAddingThreeBySize" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testRemoveErrors" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorSetError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testContains" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testContains" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testAddingOneByToString" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorNextErrors" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorConstructorsErrors" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testIteratorAdd" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
+  <testcase name="testIteratorAdd" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testIteratorSet" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
   <testcase name="testNewLinkedListBySize" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorConstructors" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
@@ -32,13 +32,13 @@
   <testcase name="testIteratorHasPrevious" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testEquals" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testLastIndexOfRepeats1" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
-  <testcase name="testLastIndexOfRepeats2" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
+  <testcase name="testLastIndexOfRepeats2" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIndexOf" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorNext" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorPrevious" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testIteratorPreviousErrors" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <testcase name="testErrorsIndexOfLastIndexOf" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
-  <testcase name="testSetError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.001"/>
+  <testcase name="testSetError" classname="edu.miracosta.cs113.DoubleLinkedListTest" time="0.0"/>
   <system-out><![CDATA[String list before removal: [first, second, third]
 String list after removal: [second, third]
 Int list before removal: [100, 200, 300]

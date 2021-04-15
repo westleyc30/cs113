@@ -51,11 +51,9 @@ public class CircularArrayQueue<E> extends AbstractQueue<E> implements Queue<E>{
 
     /**
      * Inserts an item at the rear of the queue
-     * @post item is added to the rear of the queue
      * @param item The element to add
      * @return true (always successful)
      */
-
     public boolean offer(E item) {
         if (size == capacity) {
             reallocate();

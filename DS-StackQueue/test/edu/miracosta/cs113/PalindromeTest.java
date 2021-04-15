@@ -47,8 +47,7 @@ public class PalindromeTest {
         if (s == null) {
             throw new IllegalArgumentException("No Null");
         }
-        // TODO:
-        // Implement this method body using your ArrayListStack. Be mindful of your algorithm!
+
         ArrayListStack<String> stack1 = new ArrayListStack<>();
         ArrayListStack<String> stack2 = new ArrayListStack<>();
 
