@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.miracosta.cs113.ChangeCalculatorTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2021-04-27T04:24:59" hostname="Westleys-MacBook-Pro.local" time="0.008">
+<testsuite name="edu.miracosta.cs113.ChangeCalculatorTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2021-04-27T04:31:31" hostname="Westleys-MacBook-Pro.local" time="0.005">
   <properties/>
-  <testcase name="testDuplicates" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.005">
+  <testcase name="testDuplicates" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.003">
     <failure message="java.lang.AssertionError: Test duplicates failed - Incorrect number of combinations. expected:&lt;121&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Test duplicates failed - Incorrect number of combinations. expected:&lt;121&gt; but was:&lt;-1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -168,7 +168,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="testMultiplesOfFive" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.0">
+  <testcase name="testMultiplesOfFive" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;2&gt; but was:&lt;-1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
