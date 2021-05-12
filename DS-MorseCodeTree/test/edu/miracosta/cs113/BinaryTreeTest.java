@@ -173,7 +173,8 @@ public class BinaryTreeTest {
     public void testDegenerateTrees() {
         // Each node has only 1 child.
         strTree = BinaryTree.readBinaryTree(new Scanner(DEGENERATE_INPUT));
-
+        System.out.println(strTree.toString());
+        System.out.println(strTree);
         assert strTree != null;
         assertEquals("Test toString failed - might there be an error within the " +
                 "readBinaryTree method?", DEGENERATE_TREE, strTree.toString());

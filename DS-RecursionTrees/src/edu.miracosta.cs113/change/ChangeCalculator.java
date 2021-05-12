@@ -1,5 +1,10 @@
 package edu.miracosta.cs113.change;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+
 /**
  * ChangeCalculator : Class containing the recursive method calculateChange, which determines and prints all
  * possible coin combinations representing a given monetary value in cents.
@@ -11,6 +16,10 @@ package edu.miracosta.cs113.change;
  * verify that all given coin combinations are unique.
  */
 public class ChangeCalculator {
+
+    private final static int[] COINS = {25, 10, 5, 1};
+
+    public static HashSet<String> resultSet = new HashSet<>();
 
     /**
      * Wrapper method for determining all possible unique combinations of quarters, dimes, nickels, and pennies that
@@ -25,10 +34,30 @@ public class ChangeCalculator {
      * @return the total number of unique combinations of coins of which the given value is comprised
      */
     public static int calculateChange(int cents) {
-        // TODO:
-        // Implement a recursive solution following the given documentation.
+        resultSet.clear();
+        calculateChange(cents, 0, 0, 0, cents);
+        return resultSet.size();
+    }
 
-        return -1;
+// number of coins left
+    public static void calculateChange(int cents, int q, int d, int n, int p) {
+
+        if(q * COINS[0] + d * COINS[1] + n * COINS[2] + p > cents) {
+            return;
+        }
+        resultSet.add("[" +q + ", " + d + ", " + n + ", " + p + "]");
+
+        if (p >= COINS[2]) {
+            calculateChange(cents, q, d, n + 1, p - 5);
+        }
+        if (p >= COINS[1]) {
+            calculateChange(cents, q, d + 1, n, p - 10);
+        }
+        if (p >= COINS[0]) {
+            calculateChange(cents, q + 1, d, n, p - 25);
+        }
+
+
     }
 
     /**
@@ -41,8 +70,29 @@ public class ChangeCalculator {
      * @param cents a monetary value in cents
      */
     public static void printCombinationsToFile(int cents) {
+        calculateChange(cents);
+        String directory = "/Users/westley/Documents/School/cs113/DS-RecursionTrees/src/edu.miracosta.cs113/change/CoinCombinations.txt";
+        StringBuilder comboString = new StringBuilder();
+
+        for (String s : resultSet) {
+            comboString.append(s).append("\n");
+        }
+
+        File file = new File(directory);
+        try {
+            FileWriter writer = new FileWriter(directory);
+            writer.write(comboString.toString());
+            writer.close();
+        }  catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(file.exists());
+
         // TODO:
         // This when calculateChange is complete. Note that the text file must be created within this directory.
+
     }
+
+
 
 } // End of class ChangeCalculator

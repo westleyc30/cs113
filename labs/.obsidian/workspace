@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "65e27f569317bb38",
+    "type": "split",
+    "children": [
+      {
+        "id": "68c6042d28dcc8a4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lab 18.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "00767deeed40adda",
+    "type": "split",
+    "children": [
+      {
+        "id": "63a1a28a5db13918",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa5348fe2d978046",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9ea828560df06a24",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3daa85f2d3699947",
+    "type": "split",
+    "children": [
+      {
+        "id": "82874493f9f2d9f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04d606ba49ef4387",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lab 18.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "68c6042d28dcc8a4",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Lab 17.md",
+    "Lab 16.md",
+    "Lab 15.md",
+    "Lab 14.pdf",
+    "Lab 6.md",
+    "Lab 4.md",
+    "Lab 5.md"
+  ]
+}

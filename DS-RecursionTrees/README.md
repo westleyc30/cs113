@@ -50,7 +50,7 @@ The two methods will be tested using 5 cent increments between 5 cents and 30 ce
     - Binary String = `insert here`
   - Decode the following binary string using the tree above:
   `1100010001010001001011101100011111110001101010111101101001`
-    - Decoded String = `insert here`
+    - Decoded String = `where is waldo`
 
 3. For each of the two trees shown below, answer these questions:
 - What is its height?
