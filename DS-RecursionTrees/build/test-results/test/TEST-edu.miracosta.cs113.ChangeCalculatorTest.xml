@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.miracosta.cs113.ChangeCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-07T21:09:13" hostname="Westleys-MacBook-Pro.local" time="0.013">
+<testsuite name="edu.miracosta.cs113.ChangeCalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-13T03:31:15" hostname="Westleys-MacBook-Pro.local" time="0.104">
   <properties/>
-  <testcase name="testDuplicates" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.013"/>
+  <testcase name="testDuplicates" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.022"/>
+  <testcase name="testOthersLarge" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.05"/>
+  <testcase name="testMultiplesOfFiveLarge" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.029"/>
+  <testcase name="testMultiplesOfFive" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.0"/>
+  <testcase name="testOthers" classname="edu.miracosta.cs113.ChangeCalculatorTest" time="0.001"/>
   <system-out><![CDATA[true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

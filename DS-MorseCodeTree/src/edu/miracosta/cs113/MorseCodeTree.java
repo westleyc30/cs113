@@ -60,7 +60,7 @@ public class MorseCodeTree extends BinaryTree<Character> {
                 currentRoot = root;
             }
         } catch (FileNotFoundException fnfe) {
-            System.out.println("File not found");
+            System.out.println(fnfe.getMessage());
         }
 
     }

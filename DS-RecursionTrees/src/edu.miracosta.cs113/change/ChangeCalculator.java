@@ -72,16 +72,16 @@ public class ChangeCalculator {
     public static void printCombinationsToFile(int cents) {
         calculateChange(cents);
         String directory = "/Users/westley/Documents/School/cs113/DS-RecursionTrees/src/edu.miracosta.cs113/change/CoinCombinations.txt";
-        StringBuilder comboString = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
         for (String s : resultSet) {
-            comboString.append(s).append("\n");
+            sb.append(s).append("\n");
         }
 
         File file = new File(directory);
         try {
             FileWriter writer = new FileWriter(directory);
-            writer.write(comboString.toString());
+            writer.write(sb.toString());
             writer.close();
         }  catch (IOException e) {
             e.printStackTrace();
